@@ -1,0 +1,153 @@
+
+html {
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  color: #777;
+}
+
+header{
+  display: block;
+}
+
+div.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+header div.logo_navigation {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+div.logo_navigation nav {
+  margin-top: 25px;
+}
+div.logo_navigation nav a {
+  margin-left: 30px;
+  color: #777;
+  text-decoration: none;
+}
+div.logo_navigation nav a:hover {
+  color: #bfba55;
+}
+
+header div.image_decription {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../homework/img/home-bg.jpg);
+  background-blend-mode: multiply;
+  background-color: #666666;
+  width: 100vw;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  background-blend-mode: multiply;
+  background-color: #666666;
+}
+
+header div.image_decription div.image_decription_text h1 {
+  color: #FFFFFF;
+  font-size: 70px;
+  margin: 10px;
+}
+header div.image_decription div.image_decription_text p {
+  color: #bfba55;
+  margin-bottom: 30px;
+}
+header div.image_decription div.image_decription_text button {
+  font-size: 22px;
+  height: 3em;
+  width: 180px;
+  border-radius: 35px;
+  background-color: #FFFFFF;
+  border: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  margin: 70px;
+  font-family: 'Fresca', sans-serif;
+}
+
+.card h2 {
+  font-size: 30px;
+  color: #000;
+}
+
+.card img {
+  width: 120%;
+}
+.card button{
+  font-size: 18px;
+  height: 3em;
+  width: 180px;
+  border-radius: 35px;
+  background-color: #FFFFFF;
+  color: #777;
+  margin-top: 30px;
+}
+
+.card div.information_date_comments {
+  display: flex;
+}
+
+.card div.information_date_comments img {
+  width: 4%;
+  height: 4%;
+  border-radius: 50%;
+}
+
+.card div.information_date_comments p {
+  margin-left: 10px;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: #777;
+  width: 100%;
+}
+
+footer div.footer_info {
+   display: flex;
+   justify-content: space-between;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 70px;
+}
+footer div.footer_info article.talk_to_us {
+  line-height: 3em;
+  margin-top: 0;
+}
+footer div.footer_info article.epam_lab {
+  width: 45%;
+  line-height: 2em;
+}
+
+footer div.footer_info article h2{
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+footer p {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
