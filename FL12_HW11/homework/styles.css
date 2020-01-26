@@ -1,0 +1,14 @@
+.closed-folder {
+  color: rgb(156, 128, 13);
+}
+.closed-folder div {
+  display: none;
+}
+.open-folder div {
+  display: block;
+}
+.material-icons {
+  color: rgb(156, 128, 13);
+}
+
+
