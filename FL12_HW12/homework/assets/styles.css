@@ -1,0 +1,11 @@
+.page-hidden {
+    display: none;
+  }
+  
+  .page-visible {
+    display: block;
+  }
+
+  #term-definition {
+      display: none;
+  }
