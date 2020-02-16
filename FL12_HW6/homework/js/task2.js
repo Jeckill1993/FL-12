@@ -1,26 +1,21 @@
-let a = +prompt('Enter first side');
-let b = +prompt('Enter second side');
-let c = +prompt('Enter third side');
+let a = parseFloat(prompt('Enter value'));
+let b = parseFloat(prompt('Enter value'));
+let c = parseFloat(prompt('Enter value'));
 
-if(isNaN(a) === true || isNaN(b) === true || isNaN(c) === true) {
-    alert('input values should be ONLY numbers');
-  }
-
-if(a <= 0 || b <= 0 || c <= 0) {
-  alert('A triangle must have 3 sides with a positive definite length');
+if (isNaN(a) || isNaN(b) || isNaN(c)) {
+  alert('input values should be ONLY numbers');
 } else {
-    let exist = true;
-    if(a + b < c || a + c < b || b + c < a) {
-    exist = false;
-    console.log('Triangle doesn’t exist');
-    }
-    if(a === b && a !== c || b === c && b !== a || a === c && b !== c) {
-    console.log('Equilateral triangle');
-    }
-    if(a === b && a === c || a === b && b === c) {
-    console.log('Isosceles triangle');
-    }
-    if (exist === true && a !== b && a !== c && b !== c) {
-    console.log('Scalene triangle');
+  if (a === 0 || b === 0 || c === 0) {
+    alert('A triangle must have 3 sides with a positive definite length');
+  } else if (a + b <= c || a + c <= b || b + c <= a) {
+    alert('Triangle doesn’t exist');
+  } else {
+    if (a === b && b === c) {
+      alert('Equilateral triangle');
+    } else if (a === b || b === c || a === c) {
+      alert('Isosceles triangle');
+    } else {
+      alert('Scalene triangle');
     }
   }
+}
