@@ -1,7 +1,6 @@
 const GET_PROFILE = 'profile-reducer/GET_PROFILE';
 
 
-
 const getProfileAC = (profile) => {
     return {
         type: GET_PROFILE,
@@ -14,14 +13,17 @@ let initialState = {
 }
 
 const profileReducer = (state = initialState, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case GET_PROFILE:
             return {
                 ...state,
-                state.personInfo: action.profile,
+                personInfo: action.profile,
+            }
+        default:
+            return {
+                state,
             }
     }
-    return state;
 }
 
 export default profileReducer;

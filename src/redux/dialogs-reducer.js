@@ -1,5 +1,7 @@
+
+
 let initialState = {
-    dialogUsers: [],
+    dialogsUsers: [],
     countNewMessages: 0,
 }
 
